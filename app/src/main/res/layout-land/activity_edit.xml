@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/baseBackground"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/menu_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="?attr/baseSecondary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/add_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/capriola"
+            android:paddingLeft="40dp"
+            android:text="@string/ui_menu_edit"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:paddingLeft="40dp"
+            android:text="@string/p_cat_title" />
+
+        <Spinner
+            android:id="@+id/category_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/id_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/p_id_title" />
+
+        <EditText
+            android:id="@+id/id_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:layout_marginLeft="40dp"
+            app:backgroundTint="?attr/baseSecondary"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/p_name_title" />
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:layout_marginLeft="40dp"
+            app:backgroundTint="?attr/baseSecondary"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/description_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/p_descrip_title" />
+
+        <EditText
+            android:id="@+id/description_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:layout_marginLeft="40dp"
+            app:backgroundTint="?attr/baseSecondary"
+            android:maxLines="6"
+            />
+
+        <TextView
+            android:id="@+id/company_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/p_company_title" />
+
+        <EditText
+            android:id="@+id/company_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:layout_marginLeft="40dp"
+            app:backgroundTint="?attr/baseSecondary"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/id_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/p_size_title" />
+
+        <Spinner
+            android:id="@+id/size_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/weight_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/p_weight_title" />
+
+        <EditText
+            android:id="@+id/weight_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:layout_marginLeft="40dp"
+            app:backgroundTint="?attr/baseSecondary"
+            android:inputType="number"
+
+            />
+
+        <TextView
+            android:id="@+id/waterproof_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/p_waterproof_title" />
+
+        <EditText
+            android:id="@+id/waterproof_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:layout_marginLeft="40dp"
+            app:backgroundTint="?attr/baseSecondary"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/madein_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/p_made_in_title" />
+
+        <EditText
+            android:id="@+id/madein_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:layout_marginLeft="40dp"
+            app:backgroundTint="?attr/baseSecondary"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/material_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/p_material_title" />
+
+        <EditText
+            android:id="@+id/material_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:layout_marginLeft="40dp"
+            app:backgroundTint="?attr/baseSecondary"
+            />
+
+        <TextView
+            android:id="@+id/review_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/p_review_title" />
+
+        <Spinner
+            android:id="@+id/review_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/notes_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/p_notes_title" />
+
+        <EditText
+            android:id="@+id/notes_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:layout_marginLeft="40dp"
+            app:backgroundTint="?attr/baseSecondary"
+            android:maxLines="6"
+            />
+        <TextView
+            android:id="@+id/paydate_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/r_pay_date_title" />
+
+        <DatePicker
+            android:id="@+id/paydate_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnersShown="true"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/war_date_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/r_warranty_date_title" />
+
+        <DatePicker
+            android:id="@+id/war_date_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnersShown="true"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/war_location_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:paddingLeft="40dp"
+            android:text="@string/r_warranty_loc_title" />
+
+        <EditText
+            android:id="@+id/war_location_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/capriola"
+            android:includeFontPadding="true"
+            android:layout_marginLeft="40dp"
+            app:backgroundTint="?attr/baseSecondary"
+            android:maxLines="1"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:text="Submit"
+                android:background="?attr/basepaleSecondary"
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:text="Cancel"
+                android:background="?attr/basepaleSecondary"
+                android:layout_marginBottom="80dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

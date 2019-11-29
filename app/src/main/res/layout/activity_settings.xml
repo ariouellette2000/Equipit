@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/baseBackground"
+    tools:context=".Settings">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menu_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="?attr/baseSecondary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+    </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/settings_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/capriola"
+            android:paddingLeft="40dp"
+            android:text="@string/ui_menu_settings"
+            android:textSize="23sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp">
+
+            <RadioButton
+                android:id="@+id/Pastel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_pastel"
+                android:checked="true"
+                android:layout_marginBottom="20dp"
+                android:buttonTint="?attr/baseSecondary"
+                />
+
+            <RadioButton
+                android:id="@+id/Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_dark"
+                android:layout_marginBottom="20dp"
+                android:buttonTint="?attr/baseSecondary"/>
+
+            <RadioButton
+                android:id="@+id/Fluo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_fluo"
+                android:layout_marginBottom="20dp"
+                android:buttonTint="?attr/baseSecondary"/>
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/apply_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:text="Apply"
+                android:background="?attr/basepaleSecondary"
+
+                />
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:text="Cancel"
+                android:background="?attr/basepaleSecondary"
+                android:layout_marginBottom="80dp"
+                />
+        </LinearLayout>
+    </LinearLayout>

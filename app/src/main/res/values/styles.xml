@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FluoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- change themeBackground manually here -->
+        <item name="baseBackground">@color/fluoBackground</item>
+        <item name="baseSecondary">@color/fluoSecondary</item>
+        <item name="basepaleSecondary">@color/fluopaleSecondary</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- change themeBackground manually here -->
+        <item name="baseBackground">@color/darkBackground</item>
+        <item name="baseSecondary">@color/darkSecondary</item>
+        <item name="basepaleSecondary">@color/darkPaleSecondary</item>
+    </style>
+
+    <style name="PastelTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- change themeBackground manually here -->
+        <item name="baseBackground">@color/pastelBackground</item>
+        <item name="baseSecondary">@color/pastelSecondary</item>
+        <item name="basepaleSecondary">@color/pastelpaleSecondary</item>
+    </style>
+
+    <style name="AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/alertBG</item>
+        <item name="android:alertDialogIcon">@color/darkBackground</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="ToolBarTheme" parent ="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="AppTheme.AppBarOverlay" parent ="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+</resources>

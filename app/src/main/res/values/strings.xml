@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Equipit</string>
+
+    <string name="ui_menu_add">Add Item</string>
+    <string name="ui_menu_settings">Settings</string>
+    <string name="ui_menu_home">Home</string>
+    <string name="ui_menu_edit">Edit Item</string>
+    <string name="ui_menu_details">Details</string>
+
+    <string name="app_description">Don\'t know what to bring for a trip? Have a look at your inventory!</string>
+
+    <string name="dp_drop">DROP TABLE IF EXISTS </string>
+
+    <string name="p_cat_title">Category:</string>
+    <string name="p_id_title">Product Id:</string>
+    <string name="p_name_title">Product Name:</string>
+    <string name="p_descrip_title">Description:</string>
+    <string name="p_company_title">Company:</string>
+    <string name="p_size_title">Size:</string>
+    <string name="p_weight_title">Weight:</string>
+    <string name="p_waterproof_title">Waterproof:</string>
+    <string name="p_made_in_title">Made-in:</string>
+    <string name="p_material_title">Material:</string>
+    <string name="p_review_title">Review:</string>
+    <string name="p_notes_title">Notes:</string>
+    <string name="r_pay_date_title">Pay Date:</string>
+    <string name="r_warranty_date_title">Warranty Date:</string>
+    <string name="r_warranty_loc_title">Warranty Location:</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="settings_pastel">Pastel</string>
+    <string name="settings_dark">Dark</string>
+    <string name="settings_fluo">Fluo</string>
+
+    <string-array name="categories_array">
+        <item>Clothing</item>
+        <item>Backpacks</item>
+        <item>Sleeping Bags</item>
+        <item>Sleeping Pads &amp; Mattresses</item>
+        <item>Tents</item>
+        <item>Trekking Poles &amp; Accessories</item>
+        <item>Knives &amp; Tools</item>
+
+    </string-array>
+
+    <string-array name="sizes_array">
+        <item>XXS</item>
+        <item>XS</item>
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+    </string-array>
+
+    <string-array name="reviews_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

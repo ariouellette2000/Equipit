@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/baseBackground"
+    tools:context=".Receipt">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:paddingBottom="20dp">
+    <TextView
+        android:id="@+id/receipt_titlef_fix_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/capriola"
+        android:gravity="center_horizontal"
+        android:text="Receipt"
+        android:textSize="23sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/questionsCard"
+        android:layout_width="331dp"
+        android:layout_height="159dp"
+        app:cardBackgroundColor="?attr/basepaleSecondary"
+        android:textColor="@android:color/black"
+        android:textSize="11dp"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:id="@+id/pay_date_titlef_fix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/r_pay_date_title"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/pay_date_titlef"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/warranty_date_titlef_fix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/r_warranty_date_title"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/warranty_date_titlef"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/warranty_location_titlef_fix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/r_warranty_loc_title"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/warranty_location_titlef"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+</FrameLayout>
