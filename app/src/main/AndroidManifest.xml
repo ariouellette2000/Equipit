@@ -9,16 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Settings" />
-        <activity android:name=".Edit" />
-        <activity android:name=".Add" />
-        <activity android:name=".Details" />
-        <activity android:name=".Category" />
-        <activity android:name=".Product" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Settings"
+            android:label="Equipit - Settings"/>
+        <activity android:name=".Edit"
+            android:label="Equipit - Edit"/>
+        <activity android:name=".Add"
+            android:label="Equipit - Add Item"/>
+        <activity android:name=".Details"
+            android:label="Equipit - Details"/>
+        <activity android:name=".Category"
+            android:label="Equipit - Category"/>
+        <activity android:name=".Product"
+            android:label="Equipit - Product"/>
+        <activity android:name=".MainActivity"
+            android:label="Equipit - Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

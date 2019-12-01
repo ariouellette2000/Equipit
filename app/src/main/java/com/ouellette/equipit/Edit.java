@@ -2,6 +2,7 @@ package com.ouellette.equipit;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Context;
 import android.content.Intent;
@@ -53,6 +54,8 @@ public class Edit extends AppCompatActivity {
     private Button editButton;
     private Button cancelButton;
 
+    private Toolbar myToolBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +81,9 @@ public class Edit extends AppCompatActivity {
         }
         setContentView(R.layout.activity_edit);
 
+        //ToolBar as the app bar
+        myToolBar = findViewById(R.id.menu_toolbar);
+        setSupportActionBar(myToolBar);
 
         //Receive Parcelable object
         Bundle bundle = getIntent().getExtras();
@@ -184,11 +190,15 @@ public class Edit extends AppCompatActivity {
         nameET.setText(productobj.getP_name());
         descriptionET.setText(productobj.getP_description());
         companyET.setText(productobj.getP_company());
-        String weightString = weightET.getText().toString();
-        int weightInt =0;
-        if(!(weightString.matches(""))) {
-            weightInt = Integer.valueOf(weightString);
-        }waterproofET.setText(productobj.getP_waterproof());
+        int weightInt;
+        if(productobj.getP_weight() ==  null){
+            weightInt = 0;
+        }
+        else{
+            weightInt = productobj.getP_weight();
+        }
+        weightET.setText(String.valueOf(weightInt));
+        waterproofET.setText(productobj.getP_waterproof());
         madeinET.setText(productobj.getP_made_in());
         materialET.setText(productobj.getP_material());
         notesET.setText(productobj.getP_notes());
@@ -286,6 +296,7 @@ public class Edit extends AppCompatActivity {
         return calendar.getTime();
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -311,5 +322,4 @@ public class Edit extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
 }

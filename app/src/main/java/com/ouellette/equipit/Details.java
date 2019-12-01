@@ -111,7 +111,8 @@ public class Details extends AppCompatActivity {
           descriptionTV.setText(productobj.getP_description());
           companyTV.setText(productobj.getP_company());
           sizeTV.setText(productobj.getP_size());
-          weightTV.setText(String.valueOf(productobj.getP_weight()));
+          String weightString = String.valueOf(productobj.getP_weight())+" g";
+          weightTV.setText(weightString);
           waterproofTV.setText(productobj.getP_waterproof());
           madeinTV.setText(productobj.getP_made_in());
           materialTV.setText(productobj.getP_material());
